@@ -28,6 +28,7 @@ INSTALLED_APPS = [
     'users',
     'pages',
     'bootstrap4',
+    'articles',
 ]
 
 MIDDLEWARE = [
@@ -120,3 +121,5 @@ LOGIN_REDIRECT_URLV = 'home'
 LOGOUT_REDIRECT_URL = 'home'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
